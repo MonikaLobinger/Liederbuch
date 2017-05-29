@@ -14,6 +14,17 @@
    Die | dunk- len | Wol- ken | zo- gen
    und | Wel- len | schlug der | Teich. }
 }
+§StropheOne = \markuplist {
+   \vspace #0.4
+   "Mariechen saß weinend im Garten"
+   "Im Grase lag schlummernd ihr Kind"
+   "Mit ihren schwarzbraunen Locken"
+   "spielt leise der Abendwind"
+   "||:Sie saß so still und traurig"
+   "So einsam geisterbleich"
+   "Die dunklen Wolken zogen"
+   "Und Wellen schlug der Teich :||"
+}
 §VerseTwo = \lyricmode {
    \set stanza = "2."
    Der | Rei- her steigt | ü- ber die | Ber- ge,
@@ -24,6 +35,17 @@
    "ei- ne" | hei- ße | Trä- ne | rinnt,
    "Sie hält" | schluch- zend | in den | Ar- men
    ihr | fried- lich | schlum- mernd | Kind. }
+}
+§StropheTwo = \markuplist {
+   \vspace #0.4
+   "Der Reiher steigt über die Berge"
+   "Die Möve zeiht stolz einher"
+   "In der Luft singt munter die Lerche"
+   "Es wirbelt der Sand am Meer"
+   "||: Und über Mariechens Wangen"
+   "eine heiße Träne rinnt,"
+   "Sie hält schluchzend in den Armen"
+   "ihr friedlich schlummernd Kind. :||"
 }
 §VerseThree = \lyricmode {
    \set  stanza = "3."
@@ -36,6 +58,17 @@
    dort | sind wir | dann ge- | bor- gen
    vor | Kum- mer, | Ach und | Weh. }
 }
+§StropheThree = \markuplist {
+   \vspace #0.4
+   "Dein Vater lebt lustig in Freuden"
+   "Gott laß es ihm wohl ergehn"
+   "Er denkt nicht an uns beide"
+   "Will dich und mich nicht sehn"
+   "||: Dum wollen wir uns beide"
+   "hier stürzen in den See"
+   "dort sind wir dann geborgen"
+   "vor Kummer, Ach und Weh. :||"
+}
 §VerseFour = \lyricmode {
    \set stanza = "4."
    Da | öff- net das | Kind- lein die | Au- gen
@@ -46,6 +79,17 @@
    Wir | bei- de | du und | ich
    Dem | Va- ter | sei's ver- | ge- ben
    So | glück- lich | machst du | mich. }
+}
+§StropheFour = \markuplist {
+   \vspace #0.4
+   "Da öffnet das Kindlein die Augen"
+   "Blickt freundlich sie an und lacht"
+   "Die Mutter weinet vor Freude"
+   "Und drückts an ihr Herz mit Macht"
+   "||: Ja, ja wir wollen leben"
+   "Wir beide du und ich"
+   "dem Vater sei's vergeben"
+   "so glücklich machst du mich. :||"
 }
 
 §ScoreKey = {
@@ -73,30 +117,58 @@
 §LyricsTwo =  \new Lyrics \lyricsto "Sopran" \§VerseTwo
 §LyricsThree =  \new Lyrics \lyricsto "Sopran" \§VerseThree
 §LyricsFour =  \new Lyrics \lyricsto "Sopran" \§VerseFour
-§LyricsTrailing = <<  \§LyricsTwo   \§LyricsThree   \§LyricsFour  >>
 
-Title = "Mariechen saß weinend im Garten"
-Subtitle = ##f
-Song =
+§LyricsTrailing = <<  \§LyricsTwo   \§LyricsThree   \§LyricsFour  >>
+§VersesTrailing = <<  \§VerseTwo   \§VerseThree   \§VerseFour  >>
+
+§Title = "Mariechen saß weinend im Garten"
+§Subtitle = ##f
+§MusicExpressionBook =
 <<
    \new Staff \with { midiInstrument = \MidiVoice }
-      { \new Voice = "Sopran" \§VoiceSopran   } % staff
+   <<
+      { \new Voice = "Sopran" \§VoiceSopran   }
+   >>
+   \§LyricsOne
+>>
+§MusicExpressionSheet =
+<<
+   \new Staff \with { midiInstrument = \MidiVoice }
+   <<
+      { \new Voice = "Sopran" \§VoiceSopran   }
+   >>
    \§LyricsOne
    \§LyricsTrailing
 >>
 
-ScoreMariechenSassWeinendImGarten = \score {
+ScoreMariechenSassWeinendImGartenBook = \score {
    \header {
-      title = \Title
-      subtitle = \Subtitle
+      title =    \§Title
+      subtitle = \§Subtitle
    }
-   \Song
+   \§MusicExpressionBook
 } % score
+ScoreMariechenSassWeinendImGartenSheet = \score {
+   \header {
+      title =    \§Title
+      subtitle = \§Subtitle
+   }
+   \§MusicExpressionSheet
+} % score
+MarkupMariechenSassWeinendImGarten = \markup \on-the-fly #IsInBook { \column {
+   \§StropheTwo
+   \§StropheThree
+   \§StropheFour
+} }
 
 §VerseOne = ##f
+§StropheOne = ##f
 §VerseTwo = ##f
+§StropheTwo = ##f
 §VerseThree = ##f
+§StropheThree = ##f
 §VerseFour = ##f
+§StropheFour = ##f
 §ScoreKey = ##f
 §ScoreMeter = ##f
 §NotesSopran = ##f
@@ -107,3 +179,7 @@ ScoreMariechenSassWeinendImGarten = \score {
 §LyricsFour = ##f
 §LyricsTrailing = ##f
 §VersesTrailing = ##f
+§Title = ##f
+§Subtitle = ##f
+§MusicExpressionBook = ##f
+§MusicExpressionSheet = ##f

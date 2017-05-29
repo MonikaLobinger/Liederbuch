@@ -3,20 +3,11 @@
     class: "liederbuch"
     fileTypes:["ly"]
     pattern: "/\
-\\bStrophe\\w\\w*|\
-\\bNotes\\w\\w*|\
-\\bVoice\\w\\w*|\
+\\bMarkup\\w\\w*|\
 \\bScore\\w\\w*|\
-\\bMusicExpression\\b|\
-\\bTitle\\b|\
-\\bSubtitle\\b|\
-\\\\Strophe\\w\\w*|\
-\\\\Notes\\w\\w*|\
-\\\\Voice\\w\\w*|\
+\\\\Markup\\w\\w*|\
 \\\\Score\\w\\w*|\
 \\\\MusicExpression\\b|\
-\\\\Title\\b|\
-\\\\Subtitle\\b|\
 \\bMidiVoice\\b|\
 \\\\MidiVoice\\b|\
 \\bIsAFive\\b|\

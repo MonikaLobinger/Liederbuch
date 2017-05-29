@@ -10,8 +10,9 @@
    \include "liederbuchpage1.ly"
    \include "liederbuchpage2.ly"
    \bookOutputName "../output/Liederbuch"
-   \ScoreInDemKerkerSassen
-   \StrophenInDemKerkerSassen
+   \ScoreInDemKerkerSassenBook
+   \MarkupInDemKerkerSassen
    \pieceseparator
-   \ScoreMariechenSassWeinendImGarten
+   \ScoreMariechenSassWeinendImGartenBook
+   \MarkupMariechenSassWeinendImGarten
 }

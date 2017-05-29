@@ -93,9 +93,17 @@
 §LyricsTrailing = <<  \§LyricsTwo   \§LyricsThree   \§LyricsFour  >>
 §VersesTrailing = <<  \§VerseTwo   \§VerseThree   \§VerseFour  >>
 
-Title = "In dem Kerker saßen"
-Subtitle = "Die freie Republik"
-MusicExpression =
+§Title = "In dem Kerker saßen"
+§Subtitle = "Die freie Republik"
+§MusicExpressionBook =
+<<
+   \new Staff \with { midiInstrument = \MidiVoice }
+   <<
+      \new Voice = "Sopran" \§VoiceSopran
+      \§LyricsOne
+   >>
+>>
+§MusicExpressionSheet =
 <<
    \new Staff \with { midiInstrument = \MidiVoice }
    <<
@@ -104,20 +112,26 @@ MusicExpression =
       \§LyricsTrailing
    >>
 >>
-ScoreInDemKerkerSassen = \score {
+
+ScoreInDemKerkerSassenBook = \score {
    \header {
-      title = \Title
-      subtitle = \Subtitle
+      title =    \§Title
+      subtitle = \§Subtitle
    }
-   \MusicExpression
+   \§MusicExpressionBook
 } % score
-
-
-StrophenInDemKerkerSassen = \markup \on-the-fly #IsInBook { \column {
+ScoreInDemKerkerSassenSheet = \score {
+   \header {
+      title =    \§Title
+      subtitle = \§Subtitle
+   }
+   \§MusicExpressionSheet
+} % score
+MarkupInDemKerkerSassen = \markup \on-the-fly #IsInBook { \column {
    \§StropheTwo
    \§StropheThree
    \§StropheFour
-} } % arg for procedure IsInBook
+} }
 
 §VerseOne = ##f
 §StropheOne = ##f
@@ -137,3 +151,7 @@ StrophenInDemKerkerSassen = \markup \on-the-fly #IsInBook { \column {
 §LyricsFour = ##f
 §LyricsTrailing = ##f
 §VersesTrailing = ##f
+§Title = ##f
+§Subtitle = ##f
+§MusicExpressionBook = ##f
+§MusicExpressionSheet = ##f

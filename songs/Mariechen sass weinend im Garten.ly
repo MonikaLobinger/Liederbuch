@@ -4,20 +4,18 @@
 \include "../settings/sheetA5.ily"
 \include "../scores/ScoreMariechenSassWeinendImGarten.ly"
 
-\score {
-   \header {
-      title = \Title
-      subtitle = \Subtitle
-   }
-   \Song
-   \layout {
-   %\bookOutputName  #(string-append "../output/" (ly:parser-output-name parser))
-   \bookOutputName  "../output/Mariechen sass weinend im Garten"
-   }
-   \midi {
-      \context {
-         \Score
-         tempoWholesPerMinute = #(ly:make-moment 140 4)
-      } % context
-   } % midi
-} % score
+\layout {
+%\bookOutputName  #(string-append "../output/" (ly:parser-output-name parser))
+\bookOutputName  "../output/Mariechen sass weinend im Garten"
+}
+\midi {
+   \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 140 4)
+   } % context
+} % midi
+
+
+\ScoreMariechenSassWeinendImGartenSheet
+\MarkupMariechenSassWeinendImGarten
+%\pieceseparator
