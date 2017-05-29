@@ -69,27 +69,28 @@
    \§NotesSopran
 }
 
+§LyricsOne =  \new Lyrics \lyricsto "Sopran" \§VerseOne
+§LyricsTwo =  \new Lyrics \lyricsto "Sopran" \§VerseTwo
+§LyricsThree =  \new Lyrics \lyricsto "Sopran" \§VerseThree
+§LyricsFour =  \new Lyrics \lyricsto "Sopran" \§VerseFour
+§LyricsTrailing = <<  \§LyricsTwo   \§LyricsThree   \§LyricsFour  >>
+
 Title = "Mariechen saß weinend im Garten"
 Subtitle = ##f
 Song =
 <<
-   \new Staff \with {
-         midiInstrument = \MidiVoice
-      } {
-      \new Voice = "Sopran" \§VoiceSopran
-   } % staff
-   \new Lyrics \lyricsto "Sopran" \§VerseOne
-   \new Lyrics \lyricsto "Sopran" \§VerseTwo
-   \new Lyrics \lyricsto "Sopran" \§VerseThree
-   \new Lyrics \lyricsto "Sopran" \§VerseFour
+   \new Staff \with { midiInstrument = \MidiVoice }
+      { \new Voice = "Sopran" \§VoiceSopran   } % staff
+   \§LyricsOne
+   \§LyricsTrailing
 >>
 
 ScoreMariechenSassWeinendImGarten = \score {
-   \Song
    \header {
       title = \Title
       subtitle = \Subtitle
    }
+   \Song
 } % score
 
 §VerseOne = ##f
@@ -100,3 +101,9 @@ ScoreMariechenSassWeinendImGarten = \score {
 §ScoreMeter = ##f
 §NotesSopran = ##f
 §VoiceSopran = ##f
+§LyricsOne = ##f
+§LyricsTwo = ##f
+§LyricsThree = ##f
+§LyricsFour = ##f
+§LyricsTrailing = ##f
+§VersesTrailing = ##f

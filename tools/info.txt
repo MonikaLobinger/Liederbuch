@@ -1,0 +1,22 @@
+Kontexte:
+   Notenkontexte:
+      Score (Partitur),
+         Staff (Notensystem)
+            Voice (Stimme, Notenzeile?)
+   Liedtexte
+      Lyrics (Text)
+   Akkordsymbole
+      ChordNames (Akkordbezeichnung)
+
+< >   - Enthaltene Noten sind gleichzeitig
+<< >> - Enthaltene Kontexte sind paralle
+{ }   - Sequenz
+
+Ein \score Kontext enthält nur einen einzigen musikalischen Ausdruck
+Plus Ausgabedefinition(en) - \midi und/oder \layout
+In einen \score passt nur Musik
+
+Mit \context kann man von überallher Werte für ALLE Kontexte eines bestimmten
+Types Werte setzen
+
+\book hat kein \layout, aber \paper

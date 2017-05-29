@@ -5,11 +5,11 @@
 \include "../scores/ScoreInDemKerkerSassen.ly"
 
 \score {
-   \Song
    \header {
       title = \Title
       subtitle = \Subtitle
    }
+   \Song
    \layout {
    %\bookOutputName  #(string-append "../output/" (ly:parser-output-name parser))
    \bookOutputName  "../output/In dem Kerker sassen"
