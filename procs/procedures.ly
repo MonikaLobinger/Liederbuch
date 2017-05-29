@@ -10,6 +10,10 @@
       (interpret-markup layout props arg)
       empty-stencil))
 
+#(define (LiedTrenner)
+  (ly:'pageBreak')
+)
+
 #(define (color-notehead grob)
    "Color the notehead according to its position on the staff."
   (if InBook

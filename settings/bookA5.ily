@@ -4,14 +4,15 @@
 \include "../settings/paperA5.ily"
 
 \paper {
-   inner-margin = 5.0\mm
-   outer-margin = 15.0\mm
-   binding-offset = 30.0\mm
+   #(layout-set-staff-size 14.14)
+   inner-margin = 10.0\mm
+   outer-margin = 10.0\mm
+   binding-offset = 10.0\mm
 }
 
 \layout {
- % this does not work this way for books
- \override NoteHead.font-size = 3
- % this does work
+ \override NoteHead.font-size = 1.4
+ \override Stem.thickness = #2.0
+ % works too, but is silly
  %\override Staff.BarLine.color = #white
 }
