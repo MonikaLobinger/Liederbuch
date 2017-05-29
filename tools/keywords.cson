@@ -40,11 +40,15 @@ CBEGIN/g"
 \#IsInBook\\b|\
 \#IsOneScore\\b|\
 \#color-notehead\\b|\
+\#separate-pieces\\b|\
 \\(IsInBook\\b|\
 \\(IsOneScore\\b|\
 \\(color-notehead\\b|\
+\\bseparate-pieces\\b|\
 voicesopranoverrides|\
 \\\\voicesopranoverrides|\
+pieceseparator|\
+\\\\pieceseparator|\
 NOCHNMAKRO/g"
   }
 

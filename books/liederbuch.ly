@@ -5,14 +5,13 @@
 \include "../scores/ScoreInDemKerkerSassen.ly"
 \include "../scores/ScoreMariechenSassWeinendImGarten.ly"
 
+
 \book {
    \include "liederbuchpage1.ly"
    \include "liederbuchpage2.ly"
    \bookOutputName "../output/Liederbuch"
-
    \ScoreInDemKerkerSassen
    \StrophenInDemKerkerSassen
-   \pageBreak
+   \pieceseparator
    \ScoreMariechenSassWeinendImGarten
-
 }
