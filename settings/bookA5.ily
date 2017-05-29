@@ -1,7 +1,7 @@
 \version "2.18.2"
 
-\include "../settings/book.ily"
 \include "../settings/paperA5.ily"
+\include "../settings/book.ily"
 
 \paper {
    #(layout-set-staff-size 14.14)

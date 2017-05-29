@@ -1,7 +1,7 @@
 \version "2.18.2"
 
-\include "../settings/sheet.ily"
 \include "../settings/paperA5.ily"
+\include "../settings/sheet.ily"
 
 \paper {
    #(layout-set-staff-size 17.82)
