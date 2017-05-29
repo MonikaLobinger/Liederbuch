@@ -9,7 +9,6 @@
    \header {
       title = \Title
       subtitle = \Subtitle
-
    }
    \layout {
    %\bookOutputName  #(string-append "../output/" (ly:parser-output-name parser))

@@ -1,43 +1,68 @@
 "highlight-registered-keyword": [
   {
-    class: "kkeyword"
-    pattern: "/CBEGIN|\
-CEND|\
-clearAll|
-    TODO/g"
-  }
-  {
-    class: "kkeyword"
-    pattern: "/WhiteCat|\
-BlackCat|\
-KKEY_WORD/g"
-    fileTypes:["cpp", "c", "txt"]
-  }
-  {
-    class: "kkeyword"
-    pattern: "/\\251|\\xAE/g"
-  }
-  {
     class: "liederbuch"
-    pattern: "/InBook|\
-vers/g"
     fileTypes:["ly"]
+    pattern: "/\
+\#IsInBook\\b|\
+\#IsOneScore\\b|\
+\#color-notehead\\b|\
+\\bStrophe\\w\\w*|\
+\\bNotes\\w\\w*|\
+\\bVoice\\w\\w*|\
+\\bScore\\w\\w*|\
+\\bSong\\b|\
+\\bTitle\\b|\
+\\bSubtitle\\b|\
+\\\\Strophe\\w\\w*|\
+\\\\Notes\\w\\w*|\
+\\\\Voice\\w\\w*|\
+\\\\Score\\w\\w*|\
+\\\\Song\\b|\
+\\\\Title\\b|\
+\\\\Subtitle\\b|\
+\\bInBook\\b\/g"
+
+
   }
+
+  {
+    class: "localvariablen"
+    fileTypes:["ly"]
+    pattern: "/\
+§\\w*|\
+\\\\§\\w*|\
+CBEGIN/g"
+  }
+
+  {
+    class: "makros"
+    pattern: "/QUATSCHMACROS|\
+NOCHNMAKRO/g"
+  }
+
+  {
+    class: "zeugs"
+    pattern: "/ZEUGS|\
+NOCHNZEUG/g"
+  }
+
   {
     class: "notknown"
-    pattern: "/QUATSCH|\
-QUARK|\
+    pattern: "/NOTKNOWN|\
 NOTKNOWN_KEYWORD/g"
   }
+
   {
     class: "ISBN"
     pattern: "/(ISBN-13 ?((978)|(979))-\\d{1,9}-\\d{1,9}-\\d{1,9}-\\d)|(ISBN-10 ?\\d{1,9}-\\d{1,9}-\\d{1,9}-\\d)/g"
   }
-    {
+
+  {
       class: "ISBN"
       pattern: "/TEST|HALLO/g"
-    }
-{
+  }
+
+  {
     class: "surrogatePairs"
     pattern: "/\u{2000B}|\u{2123D}|\u{2131B}|\u{2146E}|\u{218BD}|\u{20B9F}|\u{216B4}|\u{21E34}|\u{231C4}|\u{235C4}/g"
   }
