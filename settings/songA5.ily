@@ -4,5 +4,4 @@
 \include "../settings/paperA5.ily"
 
 \paper {
-   two-sided = ##f
 }

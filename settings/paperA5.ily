@@ -17,7 +17,6 @@
    %check-consistency = ##t
    %ragged-right = #tt %Auch Layout %##t: Systeme nicht bis zum rechten Rand gestreckt
    %ragged-last = %Auch Layout
-   two-sided = ##f
    %horizontal-shift
    %indent = %Auch Layout
    %short-indent =   %Auch Layout
