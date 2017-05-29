@@ -95,7 +95,7 @@
 
 Title = "In dem Kerker saßen"
 Subtitle = "Die freie Republik"
-Song =
+MusicExpression =
 <<
    \new Staff \with { midiInstrument = \MidiVoice }
       { \new Voice = "Sopran" \§VoiceSopran   } % staff
@@ -108,7 +108,7 @@ ScoreInDemKerkerSassen = \score {
       title = \Title
       subtitle = \markup { \column { \Subtitle \vspace #1 } }
    }
-   \Song
+   \MusicExpression
 } % score
 
 

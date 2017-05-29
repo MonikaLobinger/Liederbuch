@@ -7,14 +7,14 @@
 \\bNotes\\w\\w*|\
 \\bVoice\\w\\w*|\
 \\bScore\\w\\w*|\
-\\bSong\\b|\
+\\bMusicExpression\\b|\
 \\bTitle\\b|\
 \\bSubtitle\\b|\
 \\\\Strophe\\w\\w*|\
 \\\\Notes\\w\\w*|\
 \\\\Voice\\w\\w*|\
 \\\\Score\\w\\w*|\
-\\\\Song\\b|\
+\\\\MusicExpression\\b|\
 \\\\Title\\b|\
 \\\\Subtitle\\b|\
 \\bMidiVoice\\b|\

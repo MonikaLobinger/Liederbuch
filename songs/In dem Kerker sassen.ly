@@ -9,7 +9,7 @@
       title = \Title
       subtitle = \Subtitle
    }
-   \Song
+   \MusicExpression
    \layout {
    %\bookOutputName  #(string-append "../output/" (ly:parser-output-name parser))
    \bookOutputName  "../output/In dem Kerker sassen"

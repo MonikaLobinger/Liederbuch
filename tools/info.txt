@@ -1,3 +1,41 @@
+\paper { }
+\midi { general midi settings - later on same level wins}
+\layout { general layout - later on same level wins}
+\header { global title and so on - later on same level wins}
+scheme expressions(s)
+\score(s) { } // Default: One File, one Book
+\book { // Ein Book, ein Dokument
+   \paper { }
+   \midi { general midi settings }
+   \layout { general layout }
+   \header { Book title and so on }
+   scheme expressions(s)
+   \score {
+      \new Staff {
+         \new Voice {
+            \relative c'' {
+               c4 a b c
+            }
+         }
+      }
+      \layout { layout only for this score }
+      \midi { only for this score }
+      \header { only for this score }
+   }
+   ...
+   \score { more than one score possible }
+   \bookpart {
+      \paper { }
+   }
+}
+\bookpart { }
+Musikalischen Ausdruck, z.B. { c'4 d' e'2 }
+\markup { }
+Variablendefinition, z.B. foo = { c4 d e d }, gilt nur nach Definition in Datei
+\version - kann überall in der Datei stehen
+\include - kann überall in der Datei stehen 
+\sourcefilename - kann überall in der Datei stehen
+
 Kontexte:
    Notenkontexte:
       Score (Partitur),
