@@ -12,7 +12,7 @@ scheme expressions(s)
    scheme expressions(s)
    \score {
       \new Staff {
-         \new Voice {
+         \new Voice { // NUR VOICE ENTHÄLT NOTEN
             \relative c'' {
                c4 a b c
             }
@@ -25,7 +25,9 @@ scheme expressions(s)
    ...
    \score { more than one score possible }
    \bookpart {
+      \header { }
       \paper { }
+      \score(s) { }
    }
 }
 \bookpart { }
@@ -33,8 +35,10 @@ Musikalischen Ausdruck, z.B. { c'4 d' e'2 }
 \markup { }
 Variablendefinition, z.B. foo = { c4 d e d }, gilt nur nach Definition in Datei
 \version - kann überall in der Datei stehen
-\include - kann überall in der Datei stehen 
+\include - kann überall in der Datei stehen
 \sourcefilename - kann überall in der Datei stehen
+\sourcefileline - kann überall in der Datei stehen
+Kommentar  - kann überall in der Datei stehen
 
 Kontexte:
    Notenkontexte:
@@ -45,6 +49,9 @@ Kontexte:
       Lyrics (Text)
    Akkordsymbole
       ChordNames (Akkordbezeichnung)
+
+
+\context Voice = "Tenor" musik. Ausdruck (in diesem Fall der Text)
 
 < >   - Enthaltene Noten sind gleichzeitig
 << >> - Enthaltene Kontexte sind paralle

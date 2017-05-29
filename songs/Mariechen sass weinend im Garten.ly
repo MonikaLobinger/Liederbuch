@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \include "../settings/midi.ily"
-\include "../settings/songA5.ily"
+\include "../settings/sheetA5.ily"
 \include "../scores/ScoreMariechenSassWeinendImGarten.ly"
 
 \score {

@@ -85,9 +85,9 @@
    \§NotesSopran
 }
 
-§LyricsOne =  \new Lyrics \lyricsto "Sopran" \§VerseOne
-§LyricsTwo =  \new Lyrics \lyricsto "Sopran" \§VerseTwo
-§LyricsThree =  \new Lyrics \lyricsto "Sopran" \§VerseThree
+§LyricsOne =   \new Lyrics \lyricsto "Sopran" \§VerseOne
+§LyricsTwo =   \new Lyrics \lyricsto "Sopran" \§VerseTwo
+§LyricsThree = \new Lyrics \lyricsto "Sopran" \§VerseThree
 §LyricsFour =  \new Lyrics \lyricsto "Sopran" \§VerseFour
 
 §LyricsTrailing = <<  \§LyricsTwo   \§LyricsThree   \§LyricsFour  >>
@@ -98,15 +98,16 @@ Subtitle = "Die freie Republik"
 MusicExpression =
 <<
    \new Staff \with { midiInstrument = \MidiVoice }
-      { \new Voice = "Sopran" \§VoiceSopran   } % staff
-   \§LyricsOne
-   \§LyricsTrailing
+   <<
+      \new Voice = "Sopran" \§VoiceSopran
+      \§LyricsOne
+      \§LyricsTrailing
+   >>
 >>
-
 ScoreInDemKerkerSassen = \score {
    \header {
       title = \Title
-      subtitle = \markup { \column { \Subtitle \vspace #1 } }
+      subtitle = \Subtitle
    }
    \MusicExpression
 } % score
