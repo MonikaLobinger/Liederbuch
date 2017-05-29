@@ -73,7 +73,6 @@ Subtitle = ##f
 Song =
 <<
    \new Staff \with {
-         %instrumentName = "Sopran"
          midiInstrument = \MidiVoice
       } {
       \new Voice = "Sopran" \§VoiceSopran

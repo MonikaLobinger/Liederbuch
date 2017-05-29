@@ -89,7 +89,6 @@ Subtitle = "Die freie Republik"
 Song =
 <<
    \new Staff \with {
-         %instrumentName = "Sopran"
          midiInstrument = \MidiVoice
       } {
       \new Voice = "Sopran" \§VoiceSopran
@@ -112,7 +111,7 @@ StrophenInDemKerkerSassen = \markup \on-the-fly #IsInBook { \column {
    \§StropheTwo
    \§StropheThree
    \§StropheFour
-} }
+} } % markup
 
 §VerseOne = ERROR
 §StropheOne = ERROR
