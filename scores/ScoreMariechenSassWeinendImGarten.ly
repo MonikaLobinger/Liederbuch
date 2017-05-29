@@ -92,11 +92,11 @@ ScoreMariechenSassWeinendImGarten = \score {
    }
 } % score
 
-§VerseOne = ERROR
-§VerseTwo = ERROR
-§VerseThree = ERROR
-§VerseFour = ERROR
-§ScoreKey = ERROR
-§ScoreMeter = ERROR
-§NotesSopran = ERROR
-§VoiceSopran = ERROR
+§VerseOne = ##f
+§VerseTwo = ##f
+§VerseThree = ##f
+§VerseFour = ##f
+§ScoreKey = ##f
+§ScoreMeter = ##f
+§NotesSopran = ##f
+§VoiceSopran = ##f

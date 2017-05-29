@@ -18,6 +18,8 @@
 \\\\Title\\b|\
 \\\\Subtitle\\b|\
 \\bMidiVoice\\b|\
+\\\\MidiVoice\\b|\
+\\bIsAFive\\b|\
 \\bInBook\\b\/g"
 
 

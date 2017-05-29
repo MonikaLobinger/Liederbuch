@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+IsAFive = ##t
+
 \paper {
    #(set-paper-size "a5")
 

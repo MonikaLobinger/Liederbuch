@@ -112,17 +112,17 @@ StrophenInDemKerkerSassen = \markup \on-the-fly #IsInBook { \column {
    \§StropheTwo
    \§StropheThree
    \§StropheFour
-} } % markup
+} } % arg for procedure IsInBook
 
-§VerseOne = ERROR
-§StropheOne = ERROR
-§VerseTwo = ERROR
-§StropheTwo = ERROR
-§VerseThree = ERROR
-§StropheThree = ERROR
-§VerseFour = ERROR
-§StropheFour = ERROR
-§ScoreKey = ERROR
-§ScoreMeter = ERROR
-§NotesSopran = ERROR
-§VoiceSopran = ERROR
+§VerseOne = ##f
+§StropheOne = ##f
+§VerseTwo = ##f
+§StropheTwo = ##f
+§VerseThree = ##f
+§StropheThree = ##f
+§VerseFour = ##f
+§StropheFour = ##f
+§ScoreKey = ##f
+§ScoreMeter = ##f
+§NotesSopran = ##f
+§VoiceSopran = ##f
