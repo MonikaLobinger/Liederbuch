@@ -1,6 +1,7 @@
 \version "2.18.2"
 
 \include "../procs/procedures.ly"
+\include "../procs/macros.ly"
 
 §VerseOne = \lyricmode {
    \set stanza = "1."
@@ -80,7 +81,7 @@
 §VoiceSopran = {
    \§ScoreKey \§ScoreMeter
    \dynamicUp
-   \override NoteHead.color = #color-notehead
+   \voicesopranoverrides
    \§NotesSopran
 }
 

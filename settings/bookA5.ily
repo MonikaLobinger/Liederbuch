@@ -13,5 +13,5 @@
  % this does not work this way for books
  \override NoteHead.font-size = 3
  % this does work
- \override Staff.BarLine.color = #white
+ %\override Staff.BarLine.color = #white
 }

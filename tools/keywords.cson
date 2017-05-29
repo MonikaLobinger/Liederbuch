@@ -3,9 +3,6 @@
     class: "liederbuch"
     fileTypes:["ly"]
     pattern: "/\
-\#IsInBook\\b|\
-\#IsOneScore\\b|\
-\#color-notehead\\b|\
 \\bStrophe\\w\\w*|\
 \\bNotes\\w\\w*|\
 \\bVoice\\w\\w*|\
@@ -38,6 +35,14 @@ CBEGIN/g"
   {
     class: "makros"
     pattern: "/QUATSCHMACROS|\
+\#IsInBook\\b|\
+\#IsOneScore\\b|\
+\#color-notehead\\b|\
+\\(IsInBook\\b|\
+\\(IsOneScore\\b|\
+\\(color-notehead\\b|\
+voicesopranoverrides|\
+\\\\voicesopranoverrides|\
 NOCHNMAKRO/g"
   }
 
