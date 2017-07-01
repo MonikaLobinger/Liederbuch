@@ -16,4 +16,8 @@
  %\override Staff.BarLine.color = #white
  %\override Lyrics.LyricText.font-size = -2
  %\override Score.BarNumber #'break-visibility = #'#(#f #f #f)
+%     \context {
+%       \Score
+%       \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
+%     }
 }

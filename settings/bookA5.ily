@@ -15,4 +15,5 @@
  \override Stem.thickness = #2.0
  % works too, but is silly
  %\override Staff.BarLine.color = #white
+ %testing checkin via Atom Editor
 }

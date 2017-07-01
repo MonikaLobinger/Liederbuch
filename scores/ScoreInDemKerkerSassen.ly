@@ -126,6 +126,14 @@ ScoreInDemKerkerSassenSheet = \score {
       subtitle = \§Subtitle
    }
    \§MusicExpressionSheet
+   \layout {
+       \context {
+         \Score
+         %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+         \override SpacingSpanner #'shortest-duration-space = 1.4 % default 2.0
+         \override LyricText.font-size = -1
+       }
+     }
 } % score
 MarkupInDemKerkerSassen = \markup \on-the-fly #IsInBook { \column {
    \§StropheTwo
