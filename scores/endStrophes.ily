@@ -1,0 +1,31 @@
+\version "2.19.63"
+
+§§LyricsOneSI = ##f
+§§LyricsTwoSI = ##f
+§§LyricsThrSI = ##f
+§§LyricsFouSI = ##f
+§§LyricsFivSI = ##f
+§§LyricsSixSI = ##f
+§§LyricsSevSI = ##f
+§§LyricsEigSI = ##f
+§§LyricsNinSI = ##f
+§§LyricsTenSI = ##f
+§§LyricsEleSI = ##f
+§§LyricsTweSI = ##f
+§§LyricsThiSI = ##f
+§§LyricsFoTSI = ##f
+§§LyricsFiTSI = ##f
+§§LyricsSiTSI = ##f
+§§LyricsSeTSI = ##f
+§§LyricsEiTSI = ##f
+§§LyricsNiTSI = ##f
+§§LyricsTWeSI = ##f
+§§LyricsTOnSI = ##f
+§§LyricsTTwSI = ##f
+§§LyricsTThSI = ##f
+§§LyricsTFoSI = ##f
+§§LyricsTFiSI = ##f
+§§LyricsTSiSI = ##f
+§§LyricsTSeSI = ##f
+§§LyricsTEiSI = ##f
+§§LyricsTNiSI = ##f
